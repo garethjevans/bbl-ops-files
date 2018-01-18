@@ -2,3 +2,7 @@
 - type: replace
   path: /resource_pools/name=vms/cloud_properties/target_pool?
   value: ((credhub_target_pool))
+
+- type: replace
+  path: /resource_pools/name=vms/cloud_properties/tags?
+  value: ((credhub_target_tags))
